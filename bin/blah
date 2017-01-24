@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+'use strict';
+
+// const argv = strings => strings.reduce((memo, string) => {
+//   memo[string] = process.argv.indexOf(string) !== -1;
+//   return memo;
+// }, {});
+
+// const COMMANDS = [
+//         'build',
+//         'serve'
+//       ],
+//       commands = argv(COMMANDS);
+
+const blah = require('../lib'),
+      config = require('../lib/config');
+
+blah.watch(config);

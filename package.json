@@ -1,0 +1,21 @@
+{
+  "name": "blah",
+  "version": "1.0.0",
+  "description": "A work-in-progress static site generator",
+  "main": "lib/index",
+  "bin": "./bin/blah",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jake Lazaroff <yo@jake.nyc> (http://jakelazaroff.com)",
+  "license": "MIT",
+  "dependencies": {
+    "chokidar": "^1.6.1",
+    "cloth": "^2.0.2",
+    "http-server": "^0.9.0",
+    "mkdirp": "^0.5.1",
+    "readdirp": "^2.1.0",
+    "rimraf": "^2.5.4",
+    "through": "^2.3.8"
+  }
+}
