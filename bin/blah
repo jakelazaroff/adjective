@@ -1,18 +1,26 @@
 #!/usr/bin/env node
 'use strict';
 
-// const argv = strings => strings.reduce((memo, string) => {
-//   memo[string] = process.argv.indexOf(string) !== -1;
-//   return memo;
-// }, {});
+const cli = require('../lib/cli');
 
-// const COMMANDS = [
-//         'build',
-//         'serve'
-//       ],
-//       commands = argv(COMMANDS);
+const COMMANDS = [
+        'clean',
+        'build',
+        'serve'
+      ],
+      command = process.argv.find(c => COMMANDS.indexOf(c) !== -1);
 
-const blah = require('../lib'),
-      config = require('../lib/config');
-
-blah.watch(config);
+if (command === 'clean') {
+  cli.clean(() => {
+    process.exit(0);
+  });
+} else if (command === 'build') {
+  cli.build(() => {
+    process.exit(0);
+  });
+} else if (command === 'serve') {
+  cli.serve();
+} else {
+  console.log('Error: valid commands are "clean", "build" and "serve"!');
+  process.exit(1);
+}
