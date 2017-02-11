@@ -12,7 +12,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "chokidar": "^1.6.1",
-    "cloth": "^2.0.2",
+    "cloth": "^2.1.0",
     "http-server": "^0.9.0",
     "mkdirp": "^0.5.1",
     "readdirp": "^2.1.0",
