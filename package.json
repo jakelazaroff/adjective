@@ -1,9 +1,9 @@
 {
-  "name": "blah",
-  "version": "1.0.0",
-  "description": "A work-in-progress static site generator",
+  "name": "adjective",
+  "version": "0.1.0",
+  "description": "A blazing fast, dead simple, no-config build system",
   "main": "lib/index",
-  "bin": "./bin/blah",
+  "bin": { "adj": "./bin/adj" },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
