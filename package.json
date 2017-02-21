@@ -1,6 +1,6 @@
 {
   "name": "adjective",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A blazing fast, dead simple, no-config build system",
   "main": "lib/index",
   "bin": { "adj": "./bin/adj" },
